@@ -1,0 +1,28 @@
+.home {
+  min-height: 100vh;
+  width: 100%;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    font-size: 1.4rem;
+    padding: 0 4rem;
+    transition: all 1s;
+    animation: $hue-animation;
+    border-bottom: 4px solid $color-tertiary-1;
+    box-shadow: 1rem 0.3rem 1.4rem $color-tertiary-1;
+    position: fixed;
+    width: 100%;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 160rem;
+    margin: 0 auto;
+    height: 100vh;
+  }
+}

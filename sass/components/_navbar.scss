@@ -1,0 +1,16 @@
+.navbar {
+  &__headline {
+    font-weight: 700;
+
+    span {
+      color: $color-tertiary-1;
+    }
+  }
+  &__links {
+  }
+  &__link {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}
