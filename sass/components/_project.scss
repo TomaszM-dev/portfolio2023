@@ -1,0 +1,54 @@
+.project {
+  width: 60%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__headline {
+    color: $color-tertiary-1;
+    animation: $hue-animation;
+    font-size: 2.3rem;
+    margin: 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__info {
+    text-align: center;
+  }
+  &__res {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    &-language {
+      padding: 0.7rem 1.2rem;
+      margin-right: 1rem;
+
+      background-color: rgb(29, 29, 29);
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 4rem;
+
+    &-link {
+      margin-right: 3rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.project-1 {
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+
+.project-2 {
+  flex-direction: row-reverse;
+}

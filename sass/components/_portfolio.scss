@@ -1,0 +1,39 @@
+.portfolio {
+  &__container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+  }
+  &__info {
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  &__headline {
+    margin-top: 8rem;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    color: $color-tertiary-1;
+    animation: $hue-animation;
+  }
+
+  &__project {
+    padding: 2rem;
+
+    box-shadow: 0 0 1rem $color-tertiary-1;
+    animation: $hue-animation;
+    border-radius: 1rem;
+    display: flex;
+
+    margin-bottom: 3rem;
+
+    img {
+      border-radius: 1rem;
+      width: 57rem;
+      height: 30rem;
+    }
+  }
+}

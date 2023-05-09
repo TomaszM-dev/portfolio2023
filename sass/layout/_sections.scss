@@ -12,7 +12,7 @@
     transition: all 1s;
     animation: $hue-animation;
     border-bottom: 4px solid $color-tertiary-1;
-    // box-shadow: 0 0 1.4rem $color-tertiary-1;
+
     background-color: $color-primary;
     position: fixed;
     width: 100%;
@@ -34,13 +34,15 @@
 }
 
 .about {
-  height: 80vh;
+  transform: translateY(-10rem);
+  margin-top: 20rem;
   width: 100%;
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .portfolio {
-  height: 80vh;
   width: 100%;
   display: flex;
+  margin-bottom: 10rem;
 }

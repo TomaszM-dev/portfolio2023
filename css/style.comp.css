@@ -199,14 +199,43 @@ button {
   justify-content: center;
   align-items: center; }
 
-.about__image-photo {
-  box-shadow: 0 0 4.4rem #760979;
-  border-radius: 2rem;
-  width: 38rem;
-  height: 48rem;
-  object-fit: cover;
-  animation: animateColor 5s linear infinite;
-  transform: rotate(90deg); }
+.about__image {
+  position: relative;
+  width: 300rem;
+  height: 36rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about__image span {
+    position: absolute;
+    inset: 7px;
+    border-radius: 1.6rem;
+    z-index: 1; }
+  .about__image-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.6rem;
+    position: relative;
+    object-fit: cover; }
+  .about__image::after {
+    content: "";
+    position: absolute;
+    width: 60rem;
+    border-radius: 1.6rem;
+    height: 60rem;
+    background-image: conic-gradient(transparent, transparent, transparent, #760979);
+    animation: rotate 4s linear infinite, animateColor 6s linear infinite;
+    animation-delay: -2s; }
+  .about__image::before {
+    border-radius: 1.6rem;
+    content: "";
+    position: absolute;
+    width: 60rem;
+    height: 60rem;
+    background-image: conic-gradient(transparent, transparent, transparent, #760979);
+    animation: rotate 4s linear infinite, animateColor 5s linear infinite; }
 
 .about__content {
   margin-left: 10rem; }
@@ -222,6 +251,119 @@ button {
     font-size: 2rem; }
   .about__content-info {
     font-size: 1.4rem; }
+
+.portfolio__container {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.portfolio__info {
+  font-size: 2rem;
+  margin: 3rem 0; }
+
+.portfolio__headline {
+  margin-top: 8rem;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  color: #760979;
+  animation: animateColor 5s linear infinite; }
+
+.portfolio__project {
+  padding: 2rem;
+  box-shadow: 0 0 1rem #760979;
+  animation: animateColor 5s linear infinite;
+  border-radius: 1rem;
+  display: flex;
+  margin-bottom: 3rem; }
+  .portfolio__project img {
+    border-radius: 1rem;
+    width: 57rem;
+    height: 30rem; }
+
+.project {
+  width: 60%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .project__headline {
+    color: #760979;
+    animation: animateColor 5s linear infinite;
+    font-size: 2.3rem;
+    margin: 3rem 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .project__info {
+    text-align: center; }
+  .project__res {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center; }
+    .project__res-language {
+      padding: 0.7rem 1.2rem;
+      margin-right: 1rem;
+      background-color: #1d1d1d; }
+  .project__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 4rem; }
+    .project__links-link {
+      margin-right: 3rem;
+      font-size: 1.5rem; }
+
+.project-1 {
+  flex-direction: row;
+  margin-bottom: 4rem; }
+
+.project-2 {
+  flex-direction: row-reverse; }
+
+.contact {
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .contact__content {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%; }
+  .contact__headline {
+    font-size: 2.8rem;
+    color: #760979;
+    animation: animateColor 5s linear infinite;
+    margin-bottom: 2rem; }
+  .contact__paragraph {
+    font-size: 2rem; }
+  .contact__links {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .contact__link {
+    text-align: left;
+    display: flex;
+    align-items: center; }
+    .contact__link i {
+      font-size: 3rem;
+      padding: 2rem;
+      animation: animateColor 5s linear infinite;
+      background-color: #760979;
+      border-radius: 50%; }
+  .contact__info {
+    margin-left: 2rem; }
+    .contact__info h3 {
+      font-size: 1.3rem; }
+    .contact__info p {
+      font-size: 1rem; }
 
 .home {
   min-height: 100vh;
@@ -252,11 +394,13 @@ button {
     height: 100vh; }
 
 .about {
-  height: 80vh;
+  transform: translateY(-10rem);
+  margin-top: 20rem;
   width: 100%;
-  display: flex; }
+  display: flex;
+  margin-bottom: 3rem; }
 
 .portfolio {
-  height: 80vh;
   width: 100%;
-  display: flex; }
+  display: flex;
+  margin-bottom: 10rem; }

@@ -1,0 +1,55 @@
+.contact {
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__content {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  &__headline {
+    font-size: 2.8rem;
+    color: $color-tertiary-1;
+    animation: $hue-animation;
+    margin-bottom: 2rem;
+  }
+  &__paragraph {
+    font-size: 2rem;
+  }
+  &__links {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 3rem;
+      padding: 2rem;
+      animation: $hue-animation;
+      background-color: $color-tertiary-1;
+      border-radius: 50%;
+    }
+  }
+  &__info {
+    margin-left: 2rem;
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
