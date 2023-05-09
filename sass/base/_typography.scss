@@ -1,0 +1,41 @@
+.active {
+  color: $color-tertiary-1;
+}
+
+.markup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: $hue-animation;
+
+  margin-top: 13rem;
+  &__number {
+    background-color: $color-tertiary-1;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+
+    position: relative;
+
+    &::after {
+      background-color: $color-tertiary-1;
+      position: absolute;
+      content: "";
+      bottom: 100%;
+      left: 25%;
+      width: 2rem;
+      height: 13rem;
+
+      clip-path: polygon(33% 100%, 50% 0, 63% 100%);
+    }
+  }
+  &__name {
+    font-size: 1.4rem;
+  }
+}

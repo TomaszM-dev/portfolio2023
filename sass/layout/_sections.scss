@@ -6,18 +6,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
+    height: 9rem;
     font-size: 1.4rem;
     padding: 0 4rem;
     transition: all 1s;
     animation: $hue-animation;
     border-bottom: 4px solid $color-tertiary-1;
-    box-shadow: 1rem 0.3rem 1.4rem $color-tertiary-1;
+    // box-shadow: 0 0 1.4rem $color-tertiary-1;
+    background-color: $color-primary;
     position: fixed;
     width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+
+    border-radius: 5rem;
   }
 
   &__main {
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,4 +31,16 @@
     margin: 0 auto;
     height: 100vh;
   }
+}
+
+.about {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+.portfolio {
+  height: 80vh;
+  width: 100%;
+  display: flex;
 }
