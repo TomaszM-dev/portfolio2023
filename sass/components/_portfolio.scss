@@ -22,18 +22,58 @@
 
   &__project {
     padding: 2rem;
-
-    box-shadow: 0 0 1rem $color-tertiary-1;
-    animation: $hue-animation;
-    border-radius: 1rem;
-    display: flex;
-
+    position: relative;
+    border-radius: 1.6rem;
+    overflow: hidden;
     margin-bottom: 3rem;
+    width: 100rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: flex;
+      position: absolute;
+      inset: 7px;
+      border-radius: 1.6rem;
+      z-index: 1;
+    }
 
     img {
-      border-radius: 1rem;
-      width: 57rem;
-      height: 30rem;
+      width: 59rem;
+      // margin-left: 1rem;
+      height: 28.9rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 110rem;
+      height: 110rem;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        $color-tertiary-1
+      );
+      animation: rotate 4s linear infinite, animateColor 6s linear infinite;
+      border-radius: 1.6rem;
+      animation-delay: -2s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 110rem;
+      height: 110rem;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        $color-tertiary-1
+      );
+      border-radius: 1.6rem;
+      animation: rotate 4s linear infinite, animateColor 5s linear infinite;
     }
   }
 }
