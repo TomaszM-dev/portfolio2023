@@ -15,14 +15,14 @@
     width: 90%;
   }
   &__headline {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     color: $color-tertiary-1;
     animation: $hue-animation;
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
   &__paragraph {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
   }
   &__links {
     margin-top: 6rem;
@@ -47,11 +47,13 @@
   &__info {
     margin-left: 2rem;
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin-bottom: 0.7rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 }

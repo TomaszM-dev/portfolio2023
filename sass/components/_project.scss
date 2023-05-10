@@ -8,15 +8,20 @@
   background-color: rgb(1, 1, 1);
   // border-radius: 1.6rem;
 
+  &__image {
+    // object-fit: cover;
+  }
+
   &__headline {
     color: $color-tertiary-1;
     animation: $hue-animation;
-    font-size: 2.3rem;
-    margin: 2rem 0;
+    font-size: 2.1rem;
+    margin-top: 2rem;
     text-align: center;
     text-transform: uppercase;
   }
   &__info {
+    margin-top: 1rem;
     text-align: center;
   }
   &__res {
@@ -42,6 +47,12 @@
     &-link {
       margin-right: 4rem;
       font-size: 1.5rem;
+
+      &:hover {
+        color: $color-tertiary-1;
+        transition: all 0.3s;
+        animation: $hue-animation;
+      }
     }
   }
 }

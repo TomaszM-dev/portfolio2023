@@ -17,7 +17,14 @@
   &__links {
   }
   &__link {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-right: 2rem;
+
+    &:hover {
+      color: $color-tertiary-1;
+      animation: $hue-animation;
+      transition: all 0.4s;
+      transform: scale(1.2);
+    }
   }
 }

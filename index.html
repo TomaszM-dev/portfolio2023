@@ -19,14 +19,14 @@
       <div class="background__ambient"></div>
       <div class="background__ambient-2"></div>
     </div>
-    <section id="home" class="section home">
+    <section id="home" class="section home hidden">
       <div class="home__navbar">
         <h3 class="navbar__headline">TomaszM. <span>dev</span></h3>
         <div class="navbar__links">
-          <a href="home" class="navbar__link active">Home</a>
-          <a href="about" class="navbar__link">About</a>
-          <a href="projects" class="navbar__link">Projects</a>
-          <a href="contact" class="navbar__link">Contact</a>
+          <a href="#home" class="navbar__link active">Home</a>
+          <a href="#about" class="navbar__link">About</a>
+          <a href="#portfolio" class="navbar__link">Projects</a>
+          <a href="#contact" class="navbar__link">Contact</a>
         </div>
       </div>
       <div class="home__main">
@@ -40,10 +40,12 @@
               Hi I'm Tomasz Malocha. Front-End Developer from Poland, Cracow.
             </p>
             <div class="main__information-links">
-              <a href=""
+              <a href="https://github.com/TomaszM-dev" target="_blank"
                 ><i class="main__information-icons fa-brands fa-github"></i
               ></a>
-              <a href=""
+              <a
+                href="https://www.linkedin.com/in/tomasz-ma%C5%82ocha-8aa300276/"
+                target="_blank"
                 ><i class="fa-brands fa-linkedin main__information-icons"></i
               ></a>
             </div>
@@ -78,7 +80,7 @@
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <section id="about" class="section about hidden">
       <div class="about__container">
         <div class="about__image">
           <span>
@@ -100,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" class="section portfolio">
+    <section id="portfolio" class="section portfolio hidden">
       <div class="portfolio__container">
         <div class="markup">
           <p class="markup__number">
@@ -113,59 +115,76 @@
         </p>
         <div class="portfolio__project project-1">
           <span class="span1">
-            <img src="./img/about.jpg" alt="" />
+            <img src="./img/cryptobank.png" class="project__image" alt="" />
             <div class="project">
               <h3 class="project__headline">CryptoBank</h3>
               <p class="project__info">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aperiam similique voluptatibus, odio consectetur animi
-                repellendus.
+                CryptoBank is website where you can create your own account,
+                manage your expenses, check latest prices of pair of currencies
+                that you are interersted about, play game
               </p>
               <div class="project__res">
                 <p class="project__res-language">JSCRIPT</p>
                 <p class="project__res-language">SCSS</p>
+                <p class="project__res-language">CHARTJS</p>
               </div>
               <div class="project__links">
-                <p class="project__links-link">
+                <a
+                  href="https://github.com/TomaszM-dev/CryptoBanking-"
+                  target="_blank"
+                  class="project__links-link"
+                >
                   Code <i class="fa-brands fa-github"></i>
-                </p>
-                <p class="project__links-link">
+                </a>
+                <a
+                  href="https://crypto-banking-fin.vercel.app/"
+                  target="_blank"
+                  class="project__links-link"
+                >
                   Live Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </p>
+                </a>
               </div>
             </div>
           </span>
         </div>
         <div class="portfolio__project project-2">
           <span class="span2">
-            <img src="./img/about.jpg" alt="" />
+            <img src="./img/vikbro.png" class="project__image" alt="" />
             <div class="project">
-              <h3 class="project__headline">CryptoBank</h3>
+              <h3 class="project__headline">Vikbro</h3>
               <p class="project__info">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aperiam similique voluptatibus, odio consectetur animi
-                repellendus.
+                Its my first project for a client. website presents their work
+                as a carpenters, you can see their latest project and also get
+                to know their company better
               </p>
               <div class="project__res">
                 <p class="project__res-language">JSCRIPT</p>
                 <p class="project__res-language">SCSS</p>
               </div>
               <div class="project__links">
-                <p class="project__links-link">
+                <a
+                  href="https://github.com/TomaszM-dev/Vikbro-client-website"
+                  target="_blank"
+                  class="project__links-link"
+                >
                   Code <i class="fa-brands fa-github"></i>
-                </p>
-                <p class="project__links-link">
+                </a>
+                <a
+                  href="https://vikbro.vercel.app/"
+                  target="_blank"
+                  class="project__links-link"
+                >
                   Live Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </p>
+                </a>
               </div>
             </div>
           </span>
         </div>
       </div>
     </section>
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact hidden">
       <div class="markup">
         <p class="markup__number">
           <i class="fa-solid fa-address-book"></i>
@@ -192,11 +211,17 @@
         </div>
       </div>
     </section>
-    <section class="section footer">
+    <section class="footer">
       <p class="footer__copy">Copyright © 2023. All rights are reserved</p>
       <div class="footer__links">
-        <a href=""><i class="footer__link fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin footer__link"></i></a>
+        <a href="https://github.com/TomaszM-dev" target="_blank"
+          ><i class="footer__link fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/tomasz-ma%C5%82ocha-8aa300276/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin footer__link" target="_blank"></i
+        ></a>
       </div>
     </section>
   </body>

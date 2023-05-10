@@ -24,10 +24,19 @@
       margin-bottom: 3rem;
     }
     &-links {
+      &:hover {
+      }
     }
     &-icons {
       font-size: 3.5rem;
       margin-right: 1rem;
+
+      &:hover {
+        color: $color-tertiary-1;
+        animation: $hue-animation;
+        transition: all 0.4s;
+        transform: scale(1.2);
+      }
     }
   }
 
