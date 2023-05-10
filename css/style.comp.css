@@ -70,6 +70,12 @@ button {
   100% {
     transform: rotate(360deg); } }
 
+@keyframes animBack {
+  0% {
+    top: -8rem; }
+  100% {
+    top: 120%; } }
+
 .active {
   color: #760979; }
 
@@ -103,6 +109,57 @@ button {
   .markup__name {
     font-size: 1.4rem; }
 
+.span2 {
+  flex-direction: row-reverse; }
+
+.bgAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(50, 1fr);
+  background: #000;
+  filter: saturate(2);
+  overflow: hidden; }
+
+.colorBox {
+  z-index: 2;
+  filter: brightness(1.1);
+  transition: 2s ease-in;
+  position: relative;
+  margin: 2px;
+  background: #020202; }
+
+.background__ambient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #00bfff;
+  filter: blur(80px);
+  animation: animBack 10s linear infinite; }
+
+.background__ambient-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #00bfff;
+  filter: blur(80px);
+  animation: animBack 10s linear infinite;
+  animation-delay: 4s; }
+
+@keyframes animBack {
+  0% {
+    top: -8rem; }
+  100% {
+    top: 120%; } }
+
 .navbar__headline {
   font-weight: 700; }
   .navbar__headline span {
@@ -122,6 +179,7 @@ button {
   width: 90%; }
 
 .main__information {
+  z-index: 1;
   letter-spacing: 0.2rem; }
   .main__information-headline {
     margin-bottom: 3rem;
@@ -261,6 +319,7 @@ button {
 
 .portfolio__info {
   font-size: 2rem;
+  z-index: 1;
   margin: 3rem 0; }
 
 .portfolio__headline {
@@ -320,7 +379,7 @@ button {
     color: #760979;
     animation: animateColor 5s linear infinite;
     font-size: 2.3rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
     text-transform: uppercase; }
   .project__info {
@@ -338,9 +397,9 @@ button {
     display: flex;
     justify-content: center;
     margin: 2.5rem;
-    margin-left: 4rem; }
+    margin-left: 7rem; }
     .project__links-link {
-      margin-right: 3rem;
+      margin-right: 4rem;
       font-size: 1.5rem; }
 
 .project-1 {
@@ -348,7 +407,7 @@ button {
   margin-bottom: 4rem; }
 
 .project-2 {
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse !important; }
 
 .contact {
   max-width: 100rem;
@@ -359,6 +418,7 @@ button {
   justify-content: center;
   text-align: center; }
   .contact__content {
+    z-index: 1;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -367,9 +427,10 @@ button {
     font-size: 2.8rem;
     color: #760979;
     animation: animateColor 5s linear infinite;
+    text-transform: uppercase;
     margin-bottom: 2rem; }
   .contact__paragraph {
-    font-size: 2rem; }
+    font-size: 2.4rem; }
   .contact__links {
     margin-top: 6rem;
     display: flex;

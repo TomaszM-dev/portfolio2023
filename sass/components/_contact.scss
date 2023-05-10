@@ -8,6 +8,7 @@
   text-align: center;
 
   &__content {
+    z-index: 1;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -17,10 +18,11 @@
     font-size: 2.8rem;
     color: $color-tertiary-1;
     animation: $hue-animation;
+    text-transform: uppercase;
     margin-bottom: 2rem;
   }
   &__paragraph {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   &__links {
     margin-top: 6rem;

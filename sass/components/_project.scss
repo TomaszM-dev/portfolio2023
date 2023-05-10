@@ -12,7 +12,7 @@
     color: $color-tertiary-1;
     animation: $hue-animation;
     font-size: 2.3rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
     text-transform: uppercase;
   }
@@ -37,10 +37,10 @@
     display: flex;
     justify-content: center;
     margin: 2.5rem;
-    margin-left: 4rem;
+    margin-left: 7rem;
 
     &-link {
-      margin-right: 3rem;
+      margin-right: 4rem;
       font-size: 1.5rem;
     }
   }
@@ -52,5 +52,5 @@
 }
 
 .project-2 {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
 }
