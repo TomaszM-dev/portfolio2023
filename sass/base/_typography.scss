@@ -51,7 +51,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 360vh;
+  height: 320vh;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(50, 1fr);
@@ -90,13 +90,4 @@
   filter: blur(80px);
   animation: animBack 10s linear infinite;
   animation-delay: 4s;
-}
-
-@keyframes animBack {
-  0% {
-    top: -8rem;
-  }
-  100% {
-    top: 120%;
-  }
 }
