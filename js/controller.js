@@ -72,6 +72,8 @@ sectionAll.forEach(function (section) {
   sectionObserver.observe(section);
 });
 
+// mobile navbar mechanics
+
 mobileLinksContainer.addEventListener("click", function (e) {
   e.preventDefault();
 
