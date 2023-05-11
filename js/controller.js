@@ -10,13 +10,13 @@ const mobileLink = document.querySelectorAll(".mobile-nav__link");
 const openNavBtn = document.querySelector(".hamburger__btn");
 
 // bg animation
-// const numberOfBoxes = 1400;
-// for (let i = 0; i < numberOfBoxes; i++) {
-//   const colorBox = document.createElement("div");
+const numberOfBoxes = 1400;
+for (let i = 0; i < numberOfBoxes; i++) {
+  const colorBox = document.createElement("div");
 
-//   colorBox.classList.add("colorBox");
-//   bgAnimation.append(colorBox);
-// }
+  colorBox.classList.add("colorBox");
+  bgAnimation.append(colorBox);
+}
 
 // navbar change change active class
 navbarContainer.addEventListener("click", function (e) {
