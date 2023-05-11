@@ -5,6 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      margin-top: 10rem;
+    }
   }
 
   &__image {
@@ -16,6 +21,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-land) {
+      width: 40rem;
+    }
 
     span {
       position: absolute;
@@ -66,9 +75,19 @@
   }
 
   &__content {
+    @include respond(tab-land) {
+      width: 60%;
+      margin-top: 5rem;
+      margin-left: 0;
+    }
+
     margin-left: 6rem;
 
     &-header {
+      @include respond(tab-land) {
+        text-align: center;
+      }
+
       margin-bottom: 3rem;
       text-transform: uppercase;
       font-weight: 700;

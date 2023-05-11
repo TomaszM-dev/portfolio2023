@@ -4,6 +4,10 @@ const navbarContainer = document.querySelector(".navbar__links");
 const navLink = document.querySelectorAll(".navbar__link");
 const sectionAll = document.querySelectorAll(".section");
 const navbarLinks = document.querySelectorAll(".navbar__link");
+const closeNavBtn = document.querySelector(".mobile-nav__btn");
+const mobileLinksContainer = document.querySelector(".mobile-nav__links");
+const mobileLink = document.querySelectorAll(".mobile-nav__link");
+const openNavBtn = document.querySelector(".hamburger__btn");
 
 // bg animation
 const numberOfBoxes = 1400;
@@ -66,4 +70,35 @@ const sectionObserver = new IntersectionObserver(
 
 sectionAll.forEach(function (section) {
   sectionObserver.observe(section);
+});
+
+mobileLinksContainer.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const clicked = e.target.closest(".mobile-nav__link");
+  if (!clicked) return;
+
+  const linkHash = clicked.getAttribute("href");
+
+  console.log(clicked);
+
+  console.log(linkHash);
+  document
+    .querySelector(`${linkHash}`)
+    .scrollIntoView({ block: "center", behavior: "smooth" });
+
+  mobileLink.forEach((t) => {
+    t.classList.remove("active");
+  });
+
+  clicked.classList.toggle("active");
+  mobileLinksContainer.classList.toggle("hide");
+});
+
+openNavBtn.addEventListener("click", function () {
+  mobileLinksContainer.classList.toggle("hide");
+});
+
+closeNavBtn.addEventListener("click", function () {
+  mobileLinksContainer.classList.toggle("hide");
 });

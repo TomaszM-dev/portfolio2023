@@ -5,12 +5,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
   }
   &__info {
     font-size: 2rem;
     z-index: 1;
     margin: 3rem 0;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+      padding: 2.5rem;
+      text-align: center;
+    }
   }
 
   &__headline {
@@ -30,8 +40,21 @@
     width: 100rem;
     height: 30rem;
     display: flex;
+
+    @include respond(tab-land) {
+      height: 70rem;
+      width: 50rem;
+      align-items: center;
+      justify-content: stretch;
+    }
+
     justify-content: center;
     align-items: center;
+
+    @include respond(phone) {
+      width: 85%;
+      margin: 0 auto;
+    }
 
     span {
       display: flex;
@@ -42,11 +65,12 @@
     }
 
     img {
-      width: 59rem;
-      // margin-left: 1rem;
-      height: 28.9rem;
+      width: 100%;
+      height: 100%;
     }
 
+    @include respond(tab-land) {
+    }
     &::after {
       content: "";
       position: absolute;
@@ -61,6 +85,13 @@
       animation: rotate 4s linear infinite, animateColor 6s linear infinite;
       border-radius: 1.6rem;
       animation-delay: -2s;
+
+      @include respond(tab-land) {
+        width: 90rem;
+        height: 100rem;
+        top: -17rem;
+        left: -16rem;
+      }
     }
     &::before {
       content: "";
@@ -75,6 +106,17 @@
       );
       border-radius: 1.6rem;
       animation: rotate 4s linear infinite, animateColor 5s linear infinite;
+
+      @include respond(tab-land) {
+        width: 90rem;
+        height: 100rem;
+        top: -17rem;
+        left: -16rem;
+      }
     }
   }
+}
+
+.project-1 {
+  margin-bottom: 5rem;
 }
