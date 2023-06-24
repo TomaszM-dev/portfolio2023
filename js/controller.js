@@ -8,6 +8,9 @@ const closeNavBtn = document.querySelector(".mobile-nav__btn");
 const mobileLinksContainer = document.querySelector(".mobile-nav__links");
 const mobileLink = document.querySelectorAll(".mobile-nav__link");
 const openNavBtn = document.querySelector(".hamburger__btn");
+const popup = document.querySelector(".popup");
+const popupImg = document.querySelector(".popupImg");
+const aboutBtn = document.querySelector(".about__image");
 
 // bg animation
 const numberOfBoxes = 1400;
@@ -103,4 +106,12 @@ openNavBtn.addEventListener("click", function () {
 
 closeNavBtn.addEventListener("click", function () {
   mobileLinksContainer.classList.toggle("hide");
+});
+
+aboutBtn.addEventListener("click", function (e) {
+  popup.classList.toggle("hidePopup");
+});
+
+popup.addEventListener("click", function () {
+  popup.classList.toggle("hidePopup");
 });
