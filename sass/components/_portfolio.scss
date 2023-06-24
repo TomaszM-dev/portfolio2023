@@ -1,7 +1,8 @@
 .portfolio {
   &__container {
     max-width: 100rem;
-    margin: 0 auto;
+    margin: 0rem auto;
+    // margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +39,7 @@
     overflow: hidden;
     margin-bottom: 3rem;
     width: 100rem;
-    height: 30rem;
+    height: 34rem;
     display: flex;
 
     @include respond(tab-land) {
